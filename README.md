@@ -16,6 +16,22 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+## Ejecutar con Docker
+
+Construye y levanta la versión web en un contenedor:
+
+```bash
+docker compose up --build -d
+```
+
+Abre [http://localhost:8081](http://localhost:8081). Los archivos web quedan incluidos en la imagen Docker y se vuelven a generar al ejecutar `--build`.
+
+Para detener el servicio:
+
+```bash
+docker compose down
+```
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)

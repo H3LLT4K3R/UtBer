@@ -1,0 +1,9 @@
+services:
+  utber:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utber
+    ports:
+      - "8081:80"
+    restart: unless-stopped
